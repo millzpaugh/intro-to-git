@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Intro to Git | Women Who Code DC</title>
+    <title>Intro to Git </title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -43,9 +43,15 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <img src="img/wwcodedc.jpg" width="25%" />
           <h1>Intro to Git and Github</h1>
-          <code>http://womenwhocode.github.io/intro-to-git</code>
+
+        </section>
+
+        <section>
+            <h3>1. Go to <code>http://git-scm.com/</code><br/><br>2. Download the latest install.</h3>
+            <h3>3. Say yes to Unix commands.</h3>
+            <h3>4. Sign up for an account on github.</h3>
+
         </section>
 
       <section>
@@ -139,22 +145,39 @@
 
         <section>
           <h2>So, let's try it.</h2>
-          Open your terminal: 
+          Open your terminal and navigate to your mysite folder: 
           <img src="img/terminal.jpg" />
         </section>
 
         <section>
-          <code class="code-large">mkdir code</code> <br />
-          <code class="code-large">cd code</code> <br />
-          <code class="code-large">mkdir sample-project</code> <br />
-          <code class="code-large">cd sample-project</code>
+          <h3>Your current directory</h3>
+          <code class="code-large">pwd</code> <br />
+          <h3>List subdirectories</h3>
+          <code class="code-large">ls</code> <br/>
+          <h3>Navigate to through directories</h3>
+          <code class="code-large">cd ..</code>
+          <code class="code-large">cd [folder]</code>
         </section>
 
         <section>
-          <code class="code-large">touch README.md</code> <br />
+          <code class="code-large">cd ~</code> <br />
+          <code class="code-large">ls</code><br />
+          <code class="code-large">cd Desktop</code> <br/>
+          <code class="code-large">ls</code><br />
+          <code class="code-large">cd mysite</code>
+
+        </section>
+
+        <section>
           <code class="code-large">git init</code> <br />
-          <code class="code-large">git add README.md</code> <br />
+          <code class="code-large">git add index.html</code> <br />
           <code class="code-large">git commit -m "Our first file"</code>
+        </section>
+
+        <section>
+          <code class="code-large">git init</code> <br />
+          <code class="code-large">git add --all</code> <br />
+          <code class="code-large">git commit -m "First committ for all project files"</code>
         </section>
 
         <section>
@@ -164,6 +187,12 @@
 
         <section>
           <img src="img/create-new-repo.gif" width="200%" height="200%" />
+        </section>
+
+        <section>
+          <h2>Your repository name will be</h2><br>
+          <h2><i>[username]</i>.github.io</h2>
+
         </section>
 
         <section>
@@ -182,43 +211,36 @@
           <h2>And when you refresh github...</h2>
           <img src="img/sample-project-repo.jpg" />
         </section>
+        <section>
+          <h2>What just happened?</h2>
+          <img src="img/sample-project-repo.jpg" />
+        </section>
 
         <section>
           <h2>Let's make some changes.</h2>
 
-          <p><code class="code-inline">vim README.md</code></p>
+          <p><code class="code-inline">Index.html</code></p>
 
-          <img src="img/vim.jpg" />
         </section>
 
         <section>
-          <h2>hit the letter "s"</h2>
+          <h2>let's make a change to our index.html and then push it to github.</h2>
 
-          <p>Now we can type in the document.</p>
-
-          <img src="img/vim.gif" />
-        </section>
-
-        <section>
-          <h2>how do i get out of vim?</h2>
-
-          <p>When you're done typing, hit <code class="code-inline">Control + c</code> and then type <code class="code-inline">:wq</code>.</p>
-
-          <img src="img/wq.gif" />
-        </section>
-
-        <section>
-          <h2>let's make another file and then push everything to github.</h2>
-
-          <code class="code-large">touch index.html</code> <br />
-          <code class="code-large">git add --all</code> <em>Shorthand for 'add everything'</em> <br />
-          <code class="code-large">git commit -m "Commit message"</code> <br />
-          <code class="code-large">git push</code>
+          <code class="code-large">git status</code> <br />
+          <code class="code-large">git add -all</code> <em>Shorthand for 'add everything'</em> <br />
+          <code class="code-large">git commit -m "change blog title section"</code> <br />
+          <code class="code-large">git push origin master</code>
 
         </section>
 
         <section>
           <img src="img/pushed.jpg" />
+        </section>
+
+        <section>
+          <code class="code-inline">git log</code>
+
+          <img src="img/git-log.jpg" />
         </section>
 
         <section>
